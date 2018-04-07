@@ -1,0 +1,702 @@
+/*
+Monza red color: #CF000F
+Saffron yellow: #F4D03F
+Fire bush orange: #EB9532
+*/
+
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+.separator {
+    padding-top: 40px;
+    border-bottom: 2px solid #CF000F;
+    position: absolute;
+    left: 40%;
+    right: 40%;
+}
+
+.separator-top {
+    padding-bottom: 40px;
+    border-top: 2px solid #EB9532;
+    position: absolute;
+    left: 40%;
+    right: 40%;
+}
+
+/* ----- HEADINGS ----- */
+
+h1,
+h2,
+h3 {
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 190%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.h2-box {
+    font-size: 120%;
+    word-spacing: 1px;
+    text-align: left;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    margin-left: 15%;
+    width: 60%;
+    padding-top: 
+}
+
+.h2-seo {
+    color: white;
+    text-align: left;
+    font-size: 120%;
+    word-spacing: 1px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+}
+
+.h2-imp {
+    color: white;
+    text-align: right;
+    font-size: 120%;
+    word-spacing: 1px;
+    width: 70%;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+
+.h2-mobile {
+    color: white;
+    text-align: left;
+    font-size: 120%;
+    word-spacing: 1px;
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+
+/* ----- PARAGRAPHS ----- */
+.intro-copy {
+    line-height: 145%;
+    width: 60%;
+    margin-left: 20%;
+    font-size: 150%;
+    text-align: center;
+}
+
+.long-copy,
+.long-copy-seo,
+.long-copy-imp,
+.long-copy-mobile {
+    line-height: 145%;
+    width: 60%;
+    margin-right: 40%;
+    font-size: 100%;
+    text-align: left;
+    margin-left: 15%;
+}
+
+.long-copy-seo {
+    color: white;
+    width: 90%;
+}
+
+.long-copy-imp {
+    color: white;
+    width: 55%;
+    text-align: right;
+    margin-left: 40%;
+}
+
+.long-copy-mobile {
+    color: white;
+    width: 50%;
+    margin-left: 10%;
+}
+
+p {
+    margin:0;
+    padding: 0;
+}
+
+/* ----- ICONS ----- */
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: left;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /*secrets to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/* ----- LINKS ----- */
+
+a:link,
+a:visited {
+    color: black;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 5px solid transparent;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 5px solid #CF000F;
+}
+
+/* ----- BUTTONS ----- */
+
+   
+
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+
+
+.main-image-background {
+    width: 85%;
+    height: 650px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0,0.7)), url("img/main-header-img.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.header-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* Main navi */
+.nav {
+    text-align: right;
+    list-style: none;
+    height: 80px;
+    background-color: white;
+}
+
+.nav li {
+    display: inline-block;
+    padding-right: 5%;
+    padding-top: 28px;
+}
+
+.logo {
+    width: 20%;
+    height: auto;
+    float: left;
+    margin-left: 4%;
+    margin-top: 20px;
+}
+
+.logo-sticky {
+    width: 20%;
+    height: auto;
+    float: left;
+    margin-left: 4%;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Mobile navi */
+
+
+
+/* Sticky navi */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky li {
+    padding-top: 15px;
+}
+
+.sticky .logo { display: none }
+.sticky .logo-sticky { display: block }
+
+/* ----------------------------------------------- */
+/* INTRO */
+/* ----------------------------------------------- */
+
+.section-intro {
+    padding: 0;
+    padding-top: 70px;
+    margin-bottom: 70px;
+}
+
+.intro-copy {
+    margin-top: 30px;
+}
+
+
+
+/* ----------------------------------------------- */
+/* AVG PERSON SECTION */
+/* ----------------------------------------------- */
+
+.avg-person-section {
+    margin-bottom: 30px;
+    margin-top: 90px;
+    width: 65%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    height: 450px;
+    background-color: rgba(244, 208, 63, 0.8);
+}
+
+.avg-person-div {
+    width: 55%;
+    float: left;
+    border-radius: 5px;
+    margin-top: -25px;
+}
+
+
+.search-engine-img-div {
+    width: 45%;
+    height: 100%;
+    float: right;
+}
+
+.search-engine-img {
+    width: auto;
+    height: 380px;
+    position: absolute;
+    transform: translate(-9%, -15%);
+    border-radius: 5px;
+ }
+/* ----------------------------------------------- */
+/* PITCH SECTION */
+/* ----------------------------------------------- */
+
+#pitch {
+    width: 100%;
+    height: 1500px;
+    margin-bottom: 180px;
+    padding-top: 30px;
+}
+
+/* ----------------------------------------------- */
+/* SEARCH ENGINE DIV */
+/* ----------------------------------------------- */
+
+.seo-div {
+    margin-bottom: 30px;
+    margin-top: 50px;
+    padding-top: 25px;
+    width: 45%;
+    margin-left: 7.5%;
+    height: 500px;
+    z-index: 2;
+    background-color: rgba(130, 13, 22, 0.69);
+    float: left;
+}
+
+.seo-text-div {
+    width: 55%;
+    float: left;
+}
+
+.seo-img-div {
+    width: 45%;
+    height: 100%;
+    float: right;
+    position: relative;
+    transform: translate(15%)
+}
+
+/* Change with list of social media icons*/
+.seo-img {
+    height: auto;
+    width: 150%;
+    border-radius: 5px;
+ }
+
+/* ----------------------------------------------- */
+/* FIRST IMPRESSIONS DIV */
+/* ----------------------------------------------- */
+
+.imp-div {
+    width: 40%;
+    margin-top: 550px;
+    height: 400px;
+    background-color: grey;
+    position: relative;
+    float: right;
+    margin-right: 2.5%;
+}
+
+.imp-text-div {
+    margin-right: 5%;
+}
+
+.imp-img-div {
+    height: 350px;
+    width: 55%;
+    float: left;
+    position: absolute;
+    transform: translate(180px, 650px)
+}
+
+.imp-img {
+    height: 350px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* ----------------------------------------------- */
+/* MOBILE DIV */
+/* ----------------------------------------------- */
+
+.mobile-div {
+    margin-bottom: 30px;
+    margin-top: 150px;
+    width: 70%;
+    margin-left: 7.5%;
+    height: 300px;
+    z-index: 2;
+    background-color: rgba(235, 149, 50, 0.8);
+    float: left;
+}
+
+.mob-img-div {
+    height: 375px;
+    width: 65%;
+    float: right;
+    position: relative;
+    transform: translate(220px, -153px )
+}
+
+.mob-img {
+    height: 375px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* ----------------------------------------------- */
+/* WORK SECTION */
+/* ----------------------------------------------- */
+
+#work {
+    background-color: rgba(141, 137, 137, 0.31);
+    height: 550px;
+    width: 100%;
+    padding-top: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.work-example-left,
+.work-example-middle,
+.work-example-right {
+    background-color: #fff;
+    float: left;
+    border: 1px solid black;
+    margin-bottom: 100px;
+    display: inline-block;
+}
+
+
+.work-example-left,
+.work-example-right {
+    width: 25%;
+    height: 65%;
+    margin-top: 2.5%;
+}
+
+#work h3 {
+    margin-bottom: 40px;
+}
+
+.work-example-left {
+    margin-left: 10%;
+}
+
+.work-example-middle {
+    width: 30%;
+    height: 80%;
+}
+
+.work-example-right {
+    margin-right: 10%;
+}
+
+.work-img {
+    height: 100%;
+    width: 100%;
+}
+
+#work a {
+    border-bottom: 0
+}
+
+/* ----------------------------------------------- */
+/* TESTIMONIALS */
+/* ----------------------------------------------- */
+
+
+
+/* ----------------------------------------------- */
+/* PRICING */
+/* ----------------------------------------------- */
+
+.section-plans {
+    background-color: #f4f4f4;
+    height: 1000px;
+    padding-top: 70px;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 30%;
+    -webkit-box-shadow: 0 2px 2px #efefef;
+    box-shadow: 0 2px 2px #efefef;
+    float: right;
+    margin-left: 25px;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.pricing-text,
+.pricing-text-student {
+    position: absolute;
+    margin-left: 7%;
+    padding-top: 10%;
+}
+
+.pricing-text span {
+    border-bottom: 5px solid #CF000F;
+    padding-bottom: 5px;
+    margin-bottom: -5px;
+}
+
+.pricing-text-student span {
+    border-bottom: 5px solid #EB9532;
+    padding-bottom: 5px;
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #CF000F;
+    text-align: center;
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-student {
+    color: #EB9532;
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.plan-price-student span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-box ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 5%
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
+
+.student-pricing {
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* ----------------------------------------------- */
+/* CONTACT */
+/* ----------------------------------------------- */
+
+
+.form-1-name {
+    padding: 0.5%;
+    margin-left: 25%;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 18%;
+}
+
+.form-1-email {
+    padding: 0.5%;
+    margin-left: 10.5%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.form-2 {
+    width: 50%;
+    height: 200px;
+    padding: 1%;
+    margin-left: 25%;
+    margin-top: 25px;
+    resize: both;
+    overflow: auto;
+    border-radius: 5px;
+}
+
+.btn-contact {
+    border: 1px solid #CF000F;
+    top: 90%;
+    position: relative;
+    width: 15%;
+    margin-left: 42.5%;
+    margin-top: 2%;
+    border-radius: 5px;
+    background-color: #CF000F;
+    color: white;
+    box-shadow: 2px 2px;
+}
+
+.btn-contact:hover,
+.btn-contact:active {
+    background-color: rgba(207, 0, 15, 0.72);
+}
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+#footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+#footer p {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+/* ----------------------------------------------- */
+/* Animations */
+/* ----------------------------------------------- */
+
+
